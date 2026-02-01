@@ -8,7 +8,7 @@ st.title("Affordable Student Living & Travel in Germany")
 st.markdown("Explore cost of living, rent, transport, and meal expenses across major German cities.")
 
 # Load data
-df = pd.read_csv(r"C:\Users\abhi\Downloads\archive\cities_living_cost.csv")
+df = pd.read_csv("cities_living_cost.csv")
 
 # Filter German cities
 german_cities = [
@@ -112,3 +112,4 @@ plt.xlabel('Monthly Rent (€)')
 plt.ylabel('Monthly Transport (€)')
 plt.tight_layout()
 st.pyplot(plt)
+
